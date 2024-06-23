@@ -8,8 +8,20 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
   </head>
   <body>
+    <script>
+      let count = 0
+
+      function onClick() {
+        count += 1
+        document.getElementById('counter').innerText = "count is " + count
+      }
+    </script>
     <div id="root">
-      <h1>Hello</h1>
+      <h1>Hello Clicker</h1>
+      <button onClick="onClick()" style="outline: none">
+        <img src="public/coin.png" alt="coin"/>
+      </button>
+      <p id="counter">count is 0</p>
     </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
