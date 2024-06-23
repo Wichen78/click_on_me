@@ -7,7 +7,7 @@
     <title>Vite + React + TS</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
   </head>
-  <body>
+  <body style="background-color: lightcyan; touch-action: manipulation">
     <script>
       let count = 0
 
@@ -18,9 +18,11 @@
     </script>
     <div id="root">
       <h1>Hello Clicker</h1>
-      <button onClick="onClick()" style="outline: none">
-        <img src="public/coin.png" alt="coin"/>
-      </button>
+      <div style="background-color: lightcyan; touch-action: manipulation">
+        <button onClick="onClick()" style="outline: none; background-color: #747bff; touch-action: manipulation" >
+          <img src="public/coin.png" alt="coin" width="50%" style="touch-action: manipulation" />
+        </button>
+      </div>
       <p id="counter">count is 0</p>
     </div>
     <script type="module" src="/src/main.tsx"></script>
